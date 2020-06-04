@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+}
+
+.background{
+  width: 100%;
+  height: 100vh;
+  background: url("photo/back.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+}
+
+.header{
+  width: 100%;
+  padding: 15px 0;
+  background-color: #008000b0;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #beee00;
+  letter-spacing: 2px;
+  cursor: default;
+}
+
+.container{
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 90px;
+
+}
+
+.photo{
+  width: 27%;
+  height: 200px;
+  background: linear-gradient(to bottom, #008000c0,#beee00c0);
+  z-index: 1;
+  border-radius: 14px;
+  border: solid 1px;
+  transition: .2s linear;
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
+}
+
+
+.photo img{
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: .2s linear;
+   border-radius: 14px;
+  color: aqua;
+
+}
+
+.photo img:hover{
+  opacity: 0.7;
+}
+
+.photo:hover{
+  border: solid 1px #008000;
+}
